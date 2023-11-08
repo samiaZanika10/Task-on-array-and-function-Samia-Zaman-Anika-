@@ -1,0 +1,17 @@
+#include<stdio.h>
+float calculateAverage(int n1,int n2)
+{
+    int sum = n1+n2;
+    return sum/2.0;
+}
+
+int main()
+{
+    float a,b;
+    scanf("%f %f",&a,&b);
+    float average =calculateAverage(a,b);
+    printf("Measured average = %.2f\n",average);
+    return 0;
+}
+
+

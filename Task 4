@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+float findArea(int r)
+{
+    float pi = 3.1416;
+    return pi*r*r;
+}
+
+int main()
+{
+    int r1, r2;
+
+    scanf("%d %d", &r1,&r2);
+
+
+    float area1 = findArea(r1);
+    float area2 = findArea(r2);
+
+
+    (area1>area2)?printf("%.2f",area1):printf("%.2f",area2);
+
+    return 0;
+}
